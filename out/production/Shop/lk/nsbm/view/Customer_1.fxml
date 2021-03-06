@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="464.0" prefWidth="867.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.Customer_1_Controller">
+   <children>
+      <ImageView fitHeight="362.0" fitWidth="317.0" layoutX="14.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnCustomerPayment" buttonType="RAISED" layoutX="467.0" layoutY="134.0" onAction="#loadCustomerPaymentWindow" style="-fx-background-color: #0881fb;" text="Customer Payments" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnManageCustomer" buttonType="RAISED" layoutX="467.0" layoutY="279.0" onAction="#loadManageCustomerWindow" style="-fx-background-color: #0881fb;" text="Manage Customers" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <Line endX="-100.0" endY="401.0" layoutX="431.0" layoutY="30.0" startX="-100.0" />
+   </children>
+</AnchorPane>

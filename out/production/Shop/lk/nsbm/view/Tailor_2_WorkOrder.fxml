@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="792.0" prefWidth="1270.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.Tailor_2_Workorder_Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Tailor Workorder" textFill="#0b78dd">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Line endX="199.0" layoutX="115.0" layoutY="72.0" startX="-100.0" />
+      <TableView layoutX="14.0" layoutY="133.0" prefHeight="341.0" prefWidth="429.0">
+        <columns>
+          <TableColumn prefWidth="108.0" text="Order ID" />
+          <TableColumn prefWidth="122.0" text="Suit Name" />
+            <TableColumn prefWidth="78.0" text="Quantity" />
+            <TableColumn prefWidth="120.0" text="Measurement" />
+        </columns>
+      </TableView>
+      <Label layoutX="84.0" layoutY="516.0" text="Suit ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="156.0" layoutY="515.0" />
+      <Label layoutX="51.0" layoutY="563.0" text="Suit Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="156.0" layoutY="563.0" />
+      <Label layoutX="23.0" layoutY="611.0" text="Measurement">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="156.0" layoutY="610.0" prefHeight="31.0" prefWidth="300.0" />
+      <Line endX="-100.0" endY="662.0" layoutX="570.0" layoutY="94.0" startX="-100.0" />
+      <TableView layoutX="498.0" layoutY="133.0" prefHeight="341.0" prefWidth="283.0">
+         <columns>
+            <TableColumn prefWidth="108.0" text="Tailor NIC" />
+            <TableColumn prefWidth="169.0" text="Tailor Name" />
+         </columns>
+      </TableView>
+      <Label layoutX="498.0" layoutY="516.0" text="Tailor NIC">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="596.0" layoutY="515.0" />
+      <Label layoutX="478.0" layoutY="562.0" text="Tailor Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="596.0" layoutY="562.0" />
+      <Line endX="-100.0" endY="653.0" layoutX="910.0" layoutY="94.0" startX="-100.0" />
+      <TableView layoutX="832.0" layoutY="139.0" prefHeight="379.0" prefWidth="415.0">
+         <columns>
+            <TableColumn prefWidth="108.0" text="Tailor NIC" />
+            <TableColumn prefWidth="122.0" text="Suit ID" />
+            <TableColumn prefWidth="75.0" text="Quantity" />
+            <TableColumn prefWidth="97.0" text="Price" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="598.0" layoutY="616.0" prefHeight="90.0" prefWidth="95.0" style="-fx-background-color: #0881fb;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Add" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="988.0" layoutY="529.0" prefHeight="96.0" prefWidth="102.0" style="-fx-background-color: red;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Remove" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="132.0" fitWidth="143.0" layoutX="1114.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="67.0" layoutY="707.0" prefHeight="30.0" prefWidth="76.0" text="Quantity">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="156.0" layoutY="661.0" />
+      <Label layoutX="97.0" layoutY="662.0" prefHeight="30.0" prefWidth="43.0" text="Price">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="156.0" layoutY="706.0" />
+      <JFXButton buttonType="RAISED" layoutX="988.0" layoutY="659.0" prefHeight="96.0" prefWidth="102.0" style="-fx-background-color: green;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Print" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="804.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.Suit_4_Payment_Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Payment" textFill="#0b78dd">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="652.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="100.0" layoutX="120.0" layoutY="96.0" startX="-100.0" />
+      <Label layoutX="29.0" layoutY="164.0" text="Order ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="148.0" layoutY="164.0" />
+      <Label layoutX="29.0" layoutY="234.0" text="Customer ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="148.0" layoutY="233.0" />
+      <Label layoutX="29.0" layoutY="309.0" text="Order Date">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="148.0" layoutY="309.0" />
+      <TableView layoutX="380.0" layoutY="164.0" prefHeight="257.0" prefWidth="413.0">
+        <columns>
+          <TableColumn editable="false" prefWidth="119.0" text="Suit ID" />
+          <TableColumn editable="false" prefWidth="122.0" text="Suit Type" />
+            <TableColumn editable="false" prefWidth="99.0" text="Unit Price" />
+            <TableColumn editable="false" prefWidth="72.0" text="Qty" />
+        </columns>
+      </TableView>
+      <Label layoutX="284.0" layoutY="464.0" text="Unit Price">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="511.0" layoutY="464.0" text="Total">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="382.0" layoutY="464.0" prefHeight="31.0" prefWidth="111.0" />
+      <TextField layoutX="568.0" layoutY="464.0" prefHeight="31.0" prefWidth="125.0" />
+      <Label layoutX="33.0" layoutY="576.0" text="Total">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="630.0" text="Discount">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="683.0" text="Sub Total">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="576.0" text="Payment Type">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="441.0" layoutY="617.0" mnemonicParsing="false" text="Full Payment">
+         <toggleGroup>
+            <ToggleGroup fx:id="paymernt" />
+         </toggleGroup>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="441.0" layoutY="657.0" mnemonicParsing="false" text="Advanced Payment" toggleGroup="$paymernt">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="127.0" layoutY="576.0" />
+      <TextField layoutX="127.0" layoutY="626.0" />
+      <TextField layoutX="127.0" layoutY="683.0" />
+      <JFXButton fx:id="btnDone" buttonType="RAISED" layoutX="672.0" layoutY="591.0" onAction="#closePaymentWindow" prefHeight="109.0" prefWidth="109.0" style="-fx-background-color: #0881fb;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Done !" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <Line endX="655.0" layoutX="120.0" layoutY="533.0" startX="-100.0" />
+      <JFXButton buttonType="RAISED" layoutX="714.0" layoutY="453.0" prefHeight="53.0" prefWidth="56.0" style="-fx-background-color: orange;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Set" textFill="#171717">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

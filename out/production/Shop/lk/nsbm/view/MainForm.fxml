@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="865.0" prefWidth="1064.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.MainForm_Controller">
+   <children>
+      <GridPane layoutX="28.0" layoutY="373.0" prefHeight="424.0" prefWidth="1022.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="btnsuit" buttonType="RAISED" focusTraversable="false" onAction="#loadSuitWindow" style="-fx-background-color: #0881fb;" text="New Suit" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnproduct" buttonType="RAISED" focusTraversable="false" onAction="#loadProductWindow" style="-fx-background-color: #0881fb;" text="Products" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btntailor" buttonType="RAISED" focusTraversable="false" onAction="#loadTailorWindow" style="-fx-background-color: #0881fb;" text="Tailors" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnrenting" buttonType="RAISED" focusTraversable="false" onAction="#loadRentingWindow" style="-fx-background-color: #0881fb;" text="Renting" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btncustomer" buttonType="RAISED" focusTraversable="false" onAction="#loadCustomerWindow" style="-fx-background-color: #0881fb;" text="Customer" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnsummary" buttonType="RAISED" focusTraversable="false" onAction="#loadSummaryWindow" style="-fx-background-color: #0881fb;" text="Summary" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnMaterial" buttonType="RAISED" onAction="#loadMaterialWindow" style="-fx-background-color: #0881fb;" text="Material" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" style="-fx-background-color: #0881fb;" text="Orders" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <Label fx:id="lblDay" layoutX="778.0" layoutY="14.0" text="Saturday">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDayNo" layoutX="941.0" layoutY="95.0" text="08" textFill="#000407">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Line endX="-100.0" endY="49.0" layoutX="958.0" layoutY="93.0" startX="-100.0" />
+      <Label fx:id="lblYearNo" layoutX="778.0" layoutY="95.0" text="2021">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="336.0" fitWidth="337.0" layoutX="363.0" layoutY="27.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMonthNo" layoutX="874.0" layoutY="95.0" text="01">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Line endX="-100.0" endY="49.0" layoutX="1024.0" layoutY="93.0" startX="-100.0" />
+   </children>
+</AnchorPane>

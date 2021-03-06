@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="915.0" prefWidth="1049.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.Renting_2_CoatRenting_Controller">
+   <children>
+      <Label layoutX="30.0" layoutY="132.0" text="Customer Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="295.0" text="Contact">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="30.0" layoutY="169.0" prefHeight="31.0" prefWidth="324.0" />
+      <TextField layoutX="30.0" layoutY="332.0" prefHeight="31.0" prefWidth="216.0" />
+      <Label layoutX="18.0" layoutY="388.0" text="Coat Selection" textFill="#0b78dd">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Line endX="120.0" layoutX="119.0" layoutY="440.0" startX="-100.0" />
+      <TableView layoutX="30.0" layoutY="529.0" prefHeight="359.0" prefWidth="292.0">
+        <columns>
+          <TableColumn prefWidth="176.0" text="Coat Number" />
+          <TableColumn prefWidth="115.0" text="Price" />
+        </columns>
+      </TableView>
+      <TextField layoutX="32.0" layoutY="463.0" prefHeight="31.0" prefWidth="186.0" />
+      <JFXButton buttonType="RAISED" layoutX="237.0" layoutY="457.0" style="-fx-background-color: orange;" text="Search" textFill="#252323">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="391.0" layoutY="738.0" prefHeight="87.0" prefWidth="87.0" style="-fx-background-color: #0881fb;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Add" textFill="#fcfcfc">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <Line endX="-100.0" endY="881.0" layoutX="656.0" layoutY="19.0" startX="-100.0" startY="86.0" />
+      <Label layoutX="585.0" layoutY="90.0" text="Selected Coats" textFill="#0b78dd">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Line endX="123.0" endY="-1.52587890625E-5" layoutX="686.0" layoutY="150.0" startX="-100.0" />
+      <TableView layoutX="585.0" layoutY="187.0" prefHeight="359.0" prefWidth="437.0">
+         <columns>
+            <TableColumn prefWidth="176.0" text="Coat Number" />
+            <TableColumn prefWidth="115.0" text="HandOver Date" />
+            <TableColumn prefWidth="145.0" text="Price" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="758.0" layoutY="555.0" prefHeight="100.0" prefWidth="104.0" style="-fx-background-color: red;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Remove" textFill="#fcfcfc">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXDatePicker layoutX="344.0" layoutY="647.0" />
+      <Label layoutX="344.0" layoutY="610.0" text="Handover Date">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Line endX="367.0" layoutX="670.0" layoutY="679.0" startX="-100.0" />
+      <Label layoutX="570.0" layoutY="727.0" text="Total">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="570.0" layoutY="777.0" text="Sub Total">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="569.0" layoutY="829.0" text="Advance">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="825.0" layoutY="727.0" text="Discount">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="637.0" layoutY="727.0" prefHeight="31.0" prefWidth="144.0" />
+      <TextField layoutX="910.0" layoutY="727.0" prefHeight="31.0" prefWidth="126.0" />
+      <TextField layoutX="662.0" layoutY="777.0" prefHeight="31.0" prefWidth="144.0" />
+      <TextField layoutX="662.0" layoutY="829.0" prefHeight="31.0" prefWidth="144.0" />
+      <JFXButton fx:id="btnDone" buttonType="RAISED" layoutX="886.0" layoutY="794.0" onAction="#closeRentingWindow" prefHeight="100.0" prefWidth="104.0" style="-fx-background-color: #0881fb;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Done !" textFill="#fcfcfc">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="30.0" layoutY="216.0" text="NIC">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="30.0" layoutY="253.0" prefHeight="31.0" prefWidth="216.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Coat Renting" textFill="#0b78dd">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Line endX="149.0" endY="-1.52587890625E-5" layoutX="119.0" layoutY="91.0" startX="-100.0" />
+      <ImageView fitHeight="278.0" fitWidth="238.0" layoutX="303.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane pickOnBounds="false" prefHeight="681.0" prefWidth="993.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.Summary_2_Expenses_Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Expenses" textFill="#0b78dd">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Line endX="54.0" layoutX="115.0" layoutY="72.0" startX="-100.0" />
+      <Label layoutX="82.0" layoutY="130.0" text=" Date">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="177.0" layoutY="132.0" />
+      <Label layoutX="19.0" layoutY="183.0" text="Description">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="177.0" layoutY="188.0" prefHeight="31.0" prefWidth="271.0" />
+      <Label layoutX="55.0" layoutY="246.0" text="Expense">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="177.0" layoutY="248.0" />
+      <JFXButton buttonType="RAISED" layoutX="188.0" layoutY="323.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: #0881fb;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Add " textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <Line endX="-100.0" endY="573.0" layoutX="591.0" layoutY="74.0" startX="-100.0" />
+      <JFXTextField labelFloat="true" layoutX="562.0" layoutY="99.0" prefHeight="31.0" prefWidth="204.0" promptText="Enter Date" />
+      <JFXButton buttonType="RAISED" layoutX="800.0" layoutY="93.0" style="-fx-background-color: orange;" text="Search">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="515.0" layoutY="174.0" prefHeight="422.0" prefWidth="435.0">
+        <columns>
+          <TableColumn prefWidth="124.0" text="Expense Date" />
+          <TableColumn prefWidth="180.0" text="Description" />
+            <TableColumn prefWidth="116.0" text="Expense" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="197.0" fitWidth="395.0" layoutX="155.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

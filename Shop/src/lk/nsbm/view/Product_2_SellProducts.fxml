@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="830.0" prefWidth="896.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.Product_2_SellProducts_Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Sell Products" textFill="#0b78dd">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Line endX="127.0" endY="-1.52587890625E-5" layoutX="115.0" layoutY="72.0" startX="-100.0" />
+      <Label layoutX="67.0" layoutY="131.0" text="Product ID">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="206.0" layoutY="133.0" prefHeight="31.0" prefWidth="168.0" />
+      <Label layoutX="26.0" layoutY="280.0" text="Unit Price (Rs.)">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="206.0" layoutY="283.0" prefHeight="31.0" prefWidth="168.0" />
+      <Label layoutX="90.0" layoutY="359.0" text="Quantity">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="206.0" layoutY="361.0" prefHeight="31.0" prefWidth="168.0" />
+      <Label layoutX="26.0" layoutY="207.0" text="Product Name">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="206.0" layoutY="210.0" prefHeight="31.0" prefWidth="168.0" />
+      <Line endX="-100.0" endY="777.0" layoutX="517.0" layoutY="27.0" startX="-100.0" />
+      <TableView layoutX="453.0" layoutY="73.0" prefHeight="374.0" prefWidth="386.0">
+        <columns>
+          <TableColumn prefWidth="150.0" text="Product Name" />
+          <TableColumn prefWidth="129.0" text="Unit Price" />
+            <TableColumn prefWidth="106.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="181.0" layoutY="446.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #0881fb;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Add" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="596.0" layoutY="455.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: red;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Remove" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="430.0" layoutY="597.0" text="Total">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="647.0" text="Sub Total">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="671.0" layoutY="597.0" text="Discount">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="497.0" layoutY="597.0" prefHeight="31.0" prefWidth="144.0" />
+      <TextField layoutX="756.0" layoutY="597.0" prefHeight="31.0" prefWidth="126.0" />
+      <TextField layoutX="522.0" layoutY="647.0" prefHeight="31.0" prefWidth="144.0" />
+      <Line endX="214.0" layoutX="656.0" layoutY="578.0" startX="-219.0" />
+      <JFXButton fx:id="btnDone" buttonType="RAISED" layoutX="706.0" layoutY="678.0" onAction="#closeProductWindow" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #0881fb;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Done !" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="210.0" fitWidth="280.0" layoutX="126.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

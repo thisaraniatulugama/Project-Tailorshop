@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="924.0" prefWidth="948.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.Tailor_2_ManageTailor_Controller">
+   <children>
+      <Label layoutX="24.0" layoutY="24.0" text="Manage Tailors" textFill="#0b78dd">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Line endX="176.0" layoutX="125.0" layoutY="89.0" startX="-100.0" />
+      <Label layoutX="74.0" layoutY="182.0" text="Tailor Name">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="235.0" layoutY="185.0" prefHeight="31.0" prefWidth="234.0" />
+      <Label layoutX="115.0" layoutY="240.0" text="Address">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="353.0" text="Contact">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="234.0" layoutY="355.0" />
+      <Label layoutX="154.0" layoutY="411.0" text="NIC">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TableView layoutX="70.0" layoutY="510.0" prefHeight="372.0" prefWidth="799.0">
+        <columns>
+          <TableColumn prefWidth="186.0" text="Tailor NIC" />
+          <TableColumn prefWidth="205.0" text="Tailor Name" />
+            <TableColumn prefWidth="202.0" text="Address" />
+            <TableColumn prefWidth="205.0" text="Contact" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="182.0" fitWidth="263.0" layoutX="737.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="677.0" layoutY="207.0" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: #0881fb;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="677.0" layoutY="283.0" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: orange;" text="Update" textFill="#030303">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="677.0" layoutY="359.0" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <TextArea layoutX="235.0" layoutY="240.0" prefHeight="87.0" prefWidth="285.0" />
+      <TextField layoutX="234.0" layoutY="413.0" />
+   </children>
+</AnchorPane>

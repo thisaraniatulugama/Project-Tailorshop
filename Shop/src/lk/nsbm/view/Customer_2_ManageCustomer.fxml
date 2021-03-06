@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="924.0" prefWidth="948.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.Customer_2_ManageCustomer_Controller">
+   <children>
+      <Label layoutX="24.0" layoutY="24.0" text="Manage Customers" textFill="#0b78dd">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Line endX="245.0" layoutX="125.0" layoutY="89.0" startX="-100.0" />
+      <Label layoutX="28.0" layoutY="160.0" text="Customer ID">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="201.0" layoutY="163.0" />
+      <Label layoutX="48.0" layoutY="218.0" text="First Name">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="201.0" layoutY="221.0" />
+      <Label layoutX="414.0" layoutY="219.0" text="Last name">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="550.0" layoutY="222.0" />
+      <ImageView fitHeight="182.0" fitWidth="263.0" layoutX="737.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="768.0" layoutY="276.0" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: #0881fb;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="768.0" layoutY="352.0" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: orange;" text="Update" textFill="#030303">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="768.0" layoutY="428.0" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="78.0" layoutY="276.0" text="Address">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="406.0" text="Contact">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="200.0" layoutY="408.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="133.0" layoutY="457.0" text="NIC">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="201.0" layoutY="460.0" prefHeight="31.0" prefWidth="187.0" />
+      <TextArea layoutX="201.0" layoutY="276.0" prefHeight="103.0" prefWidth="361.0" />
+      <TableView layoutX="52.0" layoutY="562.0" prefHeight="337.0" prefWidth="844.0">
+        <columns>
+          <TableColumn prefWidth="101.0" text="Customer ID" />
+          <TableColumn prefWidth="149.0" text="First Name" />
+            <TableColumn prefWidth="147.0" text="Last Name" />
+            <TableColumn prefWidth="169.0" text="Address" />
+            <TableColumn prefWidth="150.0" text="Contact" />
+            <TableColumn prefWidth="127.0" text="NIC" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="872.0" prefWidth="910.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.Summary_2_Report_Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Report" textFill="#0b78dd">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Line endX="19.0" endY="1.52587890625E-5" layoutX="115.0" layoutY="72.0" startX="-100.0" />
+      <Label layoutX="52.0" layoutY="112.0" text="From">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="134.0" layoutY="114.0" />
+      <Line endX="-100.0" endY="41.0" layoutX="461.0" layoutY="109.0" startX="-100.0" />
+      <Label layoutX="404.0" layoutY="112.0" text="To">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="460.0" layoutY="114.0" />
+      <JFXButton buttonType="RAISED" layoutX="717.0" layoutY="88.0" prefHeight="83.0" prefWidth="87.0" style="-fx-background-color: orange;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Search">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="38.0" layoutY="337.0" text="Shirts">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="158.0" layoutY="341.0" />
+      <Label layoutX="17.0" layoutY="262.0" text="Income" textFill="#0b78dd">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="392.0" text="Shorts">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="158.0" layoutY="396.0" />
+      <Label layoutX="38.0" layoutY="450.0" text="Traousers">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="158.0" layoutY="454.0" />
+      <Label layoutX="38.0" layoutY="508.0" text="Coats">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="158.0" layoutY="512.0" />
+      <Label layoutX="38.0" layoutY="560.0" text="Renting">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="158.0" layoutY="564.0" />
+      <Line endX="-100.0" endY="429.0" layoutX="505.0" layoutY="288.0" startX="-100.0" />
+      <Label layoutX="439.0" layoutY="262.0" text="Expense" textFill="#0b78dd">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <TableView layoutX="432.0" layoutY="337.0" prefHeight="325.0" prefWidth="395.0">
+        <columns>
+          <TableColumn prefWidth="257.0" text="Description" />
+          <TableColumn prefWidth="137.0" text="Expense" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="575.0" layoutY="718.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: green;" styleClass="btnRound" stylesheets="@ButtonStyles.css" text="Print" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="246.0" fitWidth="351.0" layoutX="129.0" layoutY="612.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

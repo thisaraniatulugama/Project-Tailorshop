@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="874.0" prefWidth="948.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.Material_1_ManageMaterial_Controller">
+   <children>
+      <Label layoutX="24.0" layoutY="24.0" text="Manage Material" textFill="#0b78dd">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Line endX="245.0" layoutX="125.0" layoutY="89.0" startX="-100.0" />
+      <Label layoutX="78.0" layoutY="182.0" text="Material ID">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="235.0" layoutY="185.0" />
+      <Label layoutX="109.0" layoutY="241.0" text="Material">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="235.0" layoutY="243.0" />
+      <Label layoutX="121.0" layoutY="297.0" text="Quality">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TableView layoutX="60.0" layoutY="455.0" prefHeight="372.0" prefWidth="799.0">
+        <columns>
+          <TableColumn prefWidth="186.0" text="Material ID" />
+          <TableColumn prefWidth="205.0" text="Material" />
+            <TableColumn prefWidth="202.0" text="Quality" />
+            <TableColumn prefWidth="205.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="182.0" fitWidth="263.0" layoutX="737.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="578.0" layoutY="173.0" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: #0881fb;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="578.0" layoutY="249.0" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: orange;" text="Update" textFill="#030303">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="578.0" layoutY="325.0" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="105.0" layoutY="353.0" text="Quantity">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="235.0" layoutY="355.0" />
+      <ComboBox layoutX="235.0" layoutY="300.0" prefHeight="31.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>

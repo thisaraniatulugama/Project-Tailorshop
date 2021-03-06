@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="792.0" prefWidth="964.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nsbm.controller.Suit_2_LoyalCustomer_Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Select Customer" textFill="#0b78dd">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCustomers" focusTraversable="false" layoutX="20.0" layoutY="237.0" onMouseClicked="#loadDetailsToFields" prefHeight="496.0" prefWidth="558.0">
+        <columns>
+          <TableColumn editable="false" prefWidth="101.0" text="Customer ID" />
+          <TableColumn editable="false" prefWidth="132.0" text="First Name" />
+            <TableColumn editable="false" prefWidth="182.0" text="Last Name" />
+            <TableColumn editable="false" prefWidth="142.0" text="Contact" />
+        </columns>
+      </TableView>
+      <Line endX="293.0" endY="1.52587890625E-5" layoutX="115.0" layoutY="95.0" startX="-100.0" />
+      <Line endX="7.0" endY="605.0" layoutX="603.0" layoutY="165.0" startX="7.0" startY="-8.0" />
+      <ImageView fitHeight="150.0" fitWidth="198.0" layoutX="800.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vintage-tailor-shop-logo-design_139869-129.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtSearch" layoutX="32.0" layoutY="158.0" prefHeight="36.0" prefWidth="267.0" promptText="Enter Customer ID/Contact" />
+      <JFXButton fx:id="btnSearch" layoutX="322.0" layoutY="149.0" onAction="#searchCustomer" style="-fx-background-color: orange;" text="Search" textFill="#0a0a0a">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtFname" editable="false" layoutX="627.0" layoutY="307.0" prefHeight="31.0" prefWidth="220.0" />
+      <TextField fx:id="txtLname" editable="false" layoutX="627.0" layoutY="418.0" prefHeight="31.0" prefWidth="301.0" />
+      <TextField fx:id="txtContact" editable="false" layoutX="627.0" layoutY="541.0" prefHeight="31.0" prefWidth="220.0" />
+      <TextField fx:id="txtID" editable="false" layoutX="627.0" layoutY="203.0" />
+      <Label layoutX="627.0" layoutY="166.0" text="Customer ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="627.0" layoutY="269.0" text="First Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="627.0" layoutY="382.0" text="Last Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="627.0" layoutY="499.0" text="Contact">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnNext" buttonType="RAISED" layoutX="745.0" layoutY="665.0" onAction="#loadMeasurementWindow" style="-fx-background-color: #0881fb;" text="Next" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnShowAll" layoutX="448.0" layoutY="149.0" onAction="#getAllCustomers" style="-fx-background-color: #0881fb;" text="Show All" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
